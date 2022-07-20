@@ -1,0 +1,365 @@
+@font-face {
+  src: url('../assets/fonts/Montserrat-Regular.ttf');
+  font-family:Monts;
+}
+
+@font-face {
+  src:url('../assets/fonts/khand-bold.ttf');;
+  font-family: khand-bold;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+html {
+  font-size:16px;
+  font-family:Monts;
+  background-color: white;
+  scroll-behavior:smooth;
+}
+
+.nav {
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  background:linear-gradient(
+    rgba(28,96,171,0.9),
+    rgba(28,96,171,0.9)
+  );
+  z-index:2;
+}
+
+.container {
+  width:85%;
+  margin: 0 auto;
+}
+
+.nav > .container {
+  display: flex;
+}
+
+.nav-brand {
+  width: 20%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-brand > .brand {
+  text-decoration: none;
+  color:white;
+}
+
+.nav-menu {
+  display: flex;
+  height: 4rem;
+  margin-left: 3rem;
+}
+
+.menu {
+  list-style: none;
+  line-height: 4rem;
+  text-align: center; 
+  width: 5rem;
+  letter-spacing:1px;
+}
+
+.menu:nth-child(3):hover .list-submenu {
+  display: block;
+}
+
+.list-submenu {
+  width: 10rem;
+  background:linear-gradient(
+    rgba(28,96,171,0.9),
+    rgba(28,96,171,0.9)
+  );
+  display:none;
+}
+
+.submenu {
+  list-style: none;
+  cursor: pointer;
+}
+
+.submenu:hover a {
+  text-decoration: underline;
+}
+
+.submenu > a {
+  color:white;
+  text-decoration: none;
+}
+
+.menu > a {
+  color:white;
+  text-decoration: none;
+}
+
+.logo-brand {
+  width:4rem;
+  height: 4rem;
+  float: left;
+}
+.nav-menu li a{
+   color: aliceblue;
+   cursor: pointer;
+}
+li a:hover{
+  color:#034EA2;
+  background-color: aliceblue;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.hero-head {
+  height: 100vh;
+  background-image: url('../assets/img/bg-home.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-head > .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-about {
+  height: 100vh;
+  background-image: url('../assets/img/bg-about.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-about > .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-about-head {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.hero-about-head > h1 {
+  font-size: 2.5rem;
+  color:#034EA2;
+}
+
+.hero-about-content > p 
+{
+  font-size: 1.1rem;
+  width: 40rem;
+  line-height: 1.8rem;
+}
+
+.hero-about-content {
+  text-align: center;
+  display: flex;
+  align-self: center;
+}
+
+.slides {
+  width: 35rem;
+}
+
+.pillars {
+  height: 120vh;
+  background-image: url('../assets/img/bg-pillars.jpg');
+}
+
+.pillars > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillars-title {
+  text-align: center; 
+  font-size: 1.2rem;
+  color:white;
+  text-transform:uppercase;
+  padding-bottom: 2rem;
+}
+
+.img-pillars {
+  width: 45rem;
+}
+
+.sports {
+  height:920vh;
+  background-color:#00346F;
+}
+
+.sports > .container {
+  height: 100%;
+}
+
+.box-relative {
+  height: 100%;
+  position: relative;
+}
+
+.box-flex {
+  display: flex;
+  height: 172.6vh;
+}
+
+.sport-category {
+  height:23.5rem;
+  width:24rem;
+  background-color:#034EA2;
+  display:flex;
+  align-items:center;
+  box-sizing:border-box;
+  padding-left:1.5rem;
+  padding-top:7rem;
+}
+
+.sticky {
+  position: sticky;
+  top:4rem;
+}
+
+.static {
+  position: relative;
+  top:44.7rem;
+}
+
+.sport-text {
+  margin-top: 19.5rem;
+  width: 80%;
+  height: 45rem;
+  background-color: white;
+  position: relative;
+  top:4rem;
+}
+
+.sport-title {
+  color:white;
+}
+
+.sport-title > h1 {
+  font-size:2.4rem;
+}
+
+.sport-category-title {
+  font-family: khand-bold !important;
+  font-size: 3rem;
+  color:#00346F; 
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sport-category-subtitle > .container {
+  height: 100%;
+}
+
+.content1 {
+  margin-bottom:2rem;
+}
+
+.content2 {
+  height: 100%;;
+  display: flex;
+  align-items: center;
+}
+
+.sport-categori-col:first-child {
+  text-align: center;
+  width: 45%;
+  margin-right: 5%;
+}
+
+.sport-categori-col:last-child {
+  text-align: justify;
+  width: 45%;
+  margin-left: 5%;
+}
+
+.sport-category-subtitle {
+  margin-top: 2.5rem;
+}
+
+.col-img-sport {
+  width: 100%;
+}
+
+.col-img-sport2 {
+  width: 20rem;
+  height: 15rem;
+}
+
+.box-flex:nth-child(2) {
+  margin-top: 5rem;
+  flex-direction: row-reverse;
+}
+
+.box-flex:nth-child(3) {
+  margin-top: 5rem;
+}
+
+.box-flex:nth-child(4) {
+  margin-top: 5rem;
+  flex-direction: row-reverse;
+}
+
+.box-flex:nth-child(5) {
+  padding-top: 5rem;
+}
+
+footer {
+  height: 15rem;
+  background-color: #034EA2;
+}
+
+footer > .container {
+  color:white;
+  height: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.column-text {
+  line-height: 2;
+  margin-top: 2rem;
+  font-size: larger;
+}
+
+.contact {
+  font-size:1.5rem;
+
+}
+
+.contact > a{ 
+  color:white;
+  text-decoration:none;
+}
+#by{
+  cursor: pointer;
+  color: rgb(15, 20, 47);
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: larger;
+}
+#by:hover,.contact > a:hover{
+  background-color: aliceblue;
+  padding: 7px;
+  border-radius: 5px;
+  color: #00346F;
+}
